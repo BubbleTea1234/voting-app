@@ -7,7 +7,7 @@ pipeline {
         HARBOR_CRED = credentials('HARBOR-ACCOUNT')
         
         GIT_HELM_REPO = "https://github.com/BubbleTea1234/voting.git"
-        GIT_HELM_CRED = credentials('gitlab-key')
+        GIT_HELM_CRED = credentials('3b16e291-f7f9-4b0e-b6a0-5ee25df70bc5')
     }
 
     stages {
