@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        HARBOR_URL = "18.142.255.167:8081"
+        HARBOR_URL = "13.229.80.117:8081"
         HARBOR_PROJECT = "voting"
         HARBOR_CRED = credentials('HARBOR-ACCOUNT')
         
