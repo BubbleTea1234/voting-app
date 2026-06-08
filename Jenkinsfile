@@ -59,7 +59,7 @@ pipeline {
             steps {
                 dir('helm-chart') {
                     sh """
-                        git clone ${GIT_HELM_REPO} .
+                        git clone https://${GIT_HELM_CRED_USR}:${GIT_HELM_CRED_PSW}@github.com/BubbleTea1234/voting.git .
                         git config user.email "jenkins@voting.com"
                         git config user.name "Jenkins CI"
                         
