@@ -4,10 +4,10 @@ pipeline {
     environment {
         HARBOR_URL = "18.142.255.167:8081"
         HARBOR_PROJECT = "voting"
-        HARBOR_CRED = credentials('harbor-admin')
+        HARBOR_CRED = credentials('HARBOR-ACCOUNT')
         
         GIT_HELM_REPO = "https://github.com/BubbleTea1234/voting.git"
-        GIT_HELM_CRED = credentials('github-token')
+        GIT_HELM_CRED = credentials('gitlab-key')
     }
 
     stages {
