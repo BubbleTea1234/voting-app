@@ -48,6 +48,7 @@ pipeline {
             steps {
                 dir('worker') {
                     sh """
+                        export DOCKER_BUILDKIT=1
                         docker build -t ${HARBOR_URL}/${HARBOR_PROJECT}/worker:${BUILD_TAG} .
                         docker push ${HARBOR_URL}/${HARBOR_PROJECT}/worker:${BUILD_TAG}
                     """
